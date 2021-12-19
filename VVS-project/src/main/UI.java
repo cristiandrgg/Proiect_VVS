@@ -67,7 +67,7 @@ public class UI implements Runnable{
 
     public static void verifCommand(String cmd) throws IOException {
         if (cmd.equals("STATUS")) {
-            System.out.println("Status > WebServer is :"+statusServer);
+            System.out.println("Status > WebServer Status is:"+statusServer);
         }else if (cmd.equals("systeminfo")) {
             System.out.println("Status server : "+statusServer);
             System.out.println("Port : "+port);

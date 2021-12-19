@@ -54,10 +54,11 @@ public class UI implements Runnable{
 
     }
 
+    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings("DM_DEFAULT_ENCODING")
     public static void readComands() throws IOException {
         while(true)
         {
-            System.out.print("+ Enter command :");
+            System.out.print("> Enter command :");
             BufferedReader readerCommand =  new BufferedReader(new InputStreamReader(System.in));
             String comandaLinie = readerCommand.readLine();
             verifCommand(comandaLinie);
